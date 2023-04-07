@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+<!--Mainlayout(which contains two linear layout)-->
+    <LinearLayout
+        android:id="@+id/linear_one"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <TextView
+            android:id="@+id/text_one"
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:gravity="top|right"
+            android:text=""
+            android:textSize="@dimen/_35ssp"
+            android:translationY="@dimen/_25sdp" />
+
+        <TextView
+            android:id="@+id/text_two"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:gravity="bottom|right"
+            android:text=""
+            android:textSize="@dimen/_50ssp"
+            android:translationY="@dimen/_45sdp" />
+
+<!--        second linear layout which contains 4 linear layout-->
+        <LinearLayout
+            android:id="@+id/linear_two"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:background="#C6F3F2"
+            android:orientation="vertical"
+            android:translationY="@dimen/_80sdp">
+
+            <!--            third linear layout which contains 4 buttons(+,-,/,*)-->
+            <LinearLayout
+                android:id="@+id/linear_three"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_75sdp"
+                android:orientation="horizontal"
+                android:translationY="@dimen/_5sdp">
+
+                <Button
+                    android:id="@+id/plus_btn"
+                    style="@style/Widget.Design.FloatingActionButton"
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="@dimen/_60sdp"
+                    android:text="@string/plus"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_35ssp"
+                    android:translationX="@dimen/_5sdp"
+                    android:translationY="@dimen/_3sdp" />
+
+                <Button
+                    android:id="@+id/minus_btn"
+                    style="@style/Widget.Design.FloatingActionButton"
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="@dimen/_60sdp"
+                    android:text="@string/minus"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_35ssp"
+                    android:translationX="@dimen/_20sdp"
+                    android:translationY="@dimen/_3sdp" />
+
+                <Button
+                    android:id="@+id/divide_btn"
+                    style="@style/Widget.Design.FloatingActionButton"
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="@dimen/_60sdp"
+                    android:text="@string/divide"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_35ssp"
+                    android:translationX="@dimen/_40sdp"
+                    android:translationY="@dimen/_3sdp" />
+
+                <Button
+                    android:id="@+id/multiply_btn"
+                    style="@style/Widget.Design.FloatingActionButton"
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="@dimen/_60sdp"
+                    android:text="@string/multiply"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_35ssp"
+                    android:translationX="@dimen/_65sdp"
+                    android:translationY="@dimen/_3sdp" />
+
+            </LinearLayout>
+
+            <!--            fourth linear layout which contains 4 buttons(9,8,7,c)-->
+            <LinearLayout
+                android:id="@+id/linear_four"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_75sdp"
+                android:orientation="horizontal"
+                android:translationY="@dimen/_8sdp">
+
+                <Button
+                    android:id="@+id/nine_btn"
+                    style="@style/Widget.Design.FloatingActionButton"
+                    android:layout_width="@dimen/_60ssp"
+                    android:layout_height="@dimen/_60sdp"
+                    android:text="@string/nine"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_35ssp"
+                    android:translationX="@dimen/_5sdp"
+                    android:translationY="@dimen/_3sdp"
+                    app:backgroundTint="#e0864a" />
+
+                <Button
+                    android:id="@+id/eight_btn"
+                    style="@style/Widget.Design.FloatingActionButton"
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="@dimen/_60sdp"
+                    android:text="@string/eight"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_35ssp"
+                    android:translationX="@dimen/_20sdp"
+                    android:translationY="@dimen/_3sdp"
+                    app:backgroundTint="#e0864a" />
+
+                <Button
+                    android:id="@+id/seven_btn"
+                    style="@style/Widget.Design.FloatingActionButton"
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="@dimen/_60sdp"
+                    android:text="@string/seven"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_35ssp"
+                    android:translationX="@dimen/_40sdp"
+                    android:translationY="@dimen/_3sdp"
+                    app:backgroundTint="#e0864a" />
+
+                <Button
+                    android:id="@+id/clear_btn"
+                    style="@style/Widget.Design.FloatingActionButton"
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="@dimen/_60sdp"
+                    android:text="@string/clear"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_35ssp"
+                    android:translationX="@dimen/_65sdp"
+                    android:translationY="@dimen/_3sdp" />
+
+            </LinearLayout>
+
+            <!--            fifth linear layout which contains buttons(6,5,4,()-->
+            <LinearLayout
+                android:id="@+id/linear_fifth"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_75sdp"
+                android:orientation="horizontal"
+                android:translationY="@dimen/_10sdp">
+
+                <Button
+                    android:id="@+id/six_btn"
+                    style="@style/Widget.Design.FloatingActionButton"
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="@dimen/_60sdp"
+                    android:text="@string/six"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_35ssp"
+                    android:translationX="@dimen/_5sdp"
+                    android:translationY="@dimen/_3sdp"
+                    app:backgroundTint="#e0864a" />
+
+                <Button
+                    android:id="@+id/five_btn"
+                    style="@style/Widget.Design.FloatingActionButton"
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="@dimen/_60sdp"
+                    android:text="@string/five"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_35ssp"
+                    android:translationX="@dimen/_20sdp"
+                    android:translationY="@dimen/_3sdp"
+                    app:backgroundTint="#e0864a" />
+
+                <Button
+                    android:id="@+id/four_btn"
+                    style="@style/Widget.Design.FloatingActionButton"
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="@dimen/_60sdp"
+                    android:text="@string/four"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_35ssp"
+                    android:translationX="@dimen/_40sdp"
+                    android:translationY="@dimen/_3sdp"
+                    app:backgroundTint="#e0864a" />
+
+                <Button
+                    android:id="@+id/openbrck_btn"
+                    style="@style/Widget.Design.FloatingActionButton"
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="@dimen/_60sdp"
+                    android:text="@string/openbrck"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_35ssp"
+                    android:translationX="@dimen/_60sdp"
+                    android:translationY="@dimen/_3sdp" />
+
+            </LinearLayout>
+            <!--            sixth linear layout which contains buttons(3,2,1,))-->
+            <LinearLayout
+                android:id="@+id/linear_sixth"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_75sdp"
+                android:orientation="horizontal"
+                android:translationY="@dimen/_12sdp">
+
+                <Button
+                    android:id="@+id/three_btn"
+                    style="@style/Widget.Design.FloatingActionButton"
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="@dimen/_60sdp"
+                    android:text="@string/three"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_35ssp"
+                    android:translationX="@dimen/_5sdp"
+                    android:translationY="@dimen/_3sdp"
+                    app:backgroundTint="#e0864a" />
+
+                <Button
+                    android:id="@+id/two_btn"
+                    style="@style/Widget.Design.FloatingActionButton"
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="@dimen/_60sdp"
+                    android:text="@string/two"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_35ssp"
+                    android:translationX="@dimen/_20sdp"
+                    android:translationY="@dimen/_3sdp"
+                    app:backgroundTint="#e0864a" />
+
+                <Button
+                    android:id="@+id/one_btn"
+                    style="@style/Widget.Design.FloatingActionButton"
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="@dimen/_60sdp"
+                    android:text="@string/one"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_35ssp"
+                    android:translationX="@dimen/_40sdp"
+                    android:translationY="@dimen/_3sdp"
+                    app:backgroundTint="#e0864a" />
+
+                <Button
+                    android:id="@+id/closebrck_btn"
+                    style="@style/Widget.Design.FloatingActionButton"
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="@dimen/_60sdp"
+                    android:text="@string/closebrck"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_35ssp"
+                    android:translationX="@dimen/_60sdp"
+                    android:translationY="@dimen/_3sdp" />
+
+            </LinearLayout>
+
+            <!--            seventh linear layout which contains buttons(0,.,^,=)-->
+            <LinearLayout
+                android:id="@+id/linear_seven"
+                android:layout_width="match_parent"
+                android:layout_height="95dp"
+                android:orientation="horizontal"
+                android:translationY="@dimen/_15sdp">
+
+                <Button
+                    android:id="@+id/zero_btn"
+                    style="@style/Widget.Design.FloatingActionButton"
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="@dimen/_60sdp"
+                    android:text="@string/zero"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_35ssp"
+                    android:translationX="@dimen/_5sdp"
+                    android:translationY="@dimen/_3sdp"
+                    app:backgroundTint="#e0864a" />
+
+                <Button
+                    android:id="@+id/dot_btn"
+                    style="@style/Widget.Design.FloatingActionButton"
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="@dimen/_60sdp"
+                    android:text="@string/dot"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_35ssp"
+                    android:translationX="@dimen/_20sdp"
+                    android:translationY="@dimen/_3sdp" />
+
+                <Button
+                    android:id="@+id/power_btn"
+                    style="@style/Widget.Design.FloatingActionButton"
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="@dimen/_60sdp"
+                    android:text="@string/power"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_35ssp"
+                    android:translationX="@dimen/_40sdp"
+                    android:translationY="@dimen/_3sdp" />
+
+                <Button
+                    android:id="@+id/equal_btn"
+                    style="@style/Widget.Design.FloatingActionButton"
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="@dimen/_60sdp"
+                    android:text="@string/equalto"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_35ssp"
+                    android:translationX="@dimen/_60sdp"
+                    android:translationY="@dimen/_3sdp" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
